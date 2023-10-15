@@ -45,13 +45,12 @@
   nvidia-smi
   # GUI application
   glmark2
-  # gazebo
-  gazebo
   ```
 
 + initialize `rosdep`
 
 ```bash
+su docker
 sudo rosdep init
 rosdep update
 ```

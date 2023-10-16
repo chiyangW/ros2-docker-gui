@@ -22,5 +22,4 @@ RUN apt-get install -y software-properties-common && \
     apt-get update && apt-get upgrade -y && \
     apt-get install -y ros-humble-desktop && \
     rm -rf /var/lib/apt/lists/* && \
-    echo "source /opt/ros/humble/setup.bash" >> $home/.bashrc && \
-    apt-get install python3-rosdep    
+    echo "source /opt/ros/humble/setup.bash" >> $home/.bashrc   

@@ -20,7 +20,7 @@ RUN apt-get install -y software-properties-common && \
     curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg && \
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu jammy main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
     apt-get update && apt-get upgrade -y && \
-    apt-get install -y ros-iron-desktop && \
+    apt-get install -y ros-humble-desktop && \
     rm -rf /var/lib/apt/lists/* && \
-    echo "source /opt/ros/iron/setup.bash" >> $home/.bashrc && \
+    echo "source /opt/ros/humble/setup.bash" >> $home/.bashrc && \
     apt-get install python3-rosdep    
